@@ -1,0 +1,30 @@
+■ ssh key
+https://blog.csdn.net/Egean/article/details/79480016
+
+1. 在github上注册账号
+renhl252@163.com
+
+2. 获取本机的ssh密钥
+cd ~/.ssh
+ssh-keygen -C 'renhl252@163.com' -t rsa
+拷贝id_rsa.pub公钥的内容
+
+3.将ssh秘钥添加到github账户
+setting->ssh and GPG keys->SSH key 
+
+■ 创建分支
+https://blog.csdn.net/someby/article/details/85245436
+创建omby分支
+
+1.创建一个分支
+git branch omby
+2. 切换分支
+git checkout omby
+3. 查看本地代码状态
+git status
+4. 添加修改的代码到缓存
+git add .
+5. 做一次提交，指定提交的远程分支
+git push origin omby
+
+
